@@ -14,6 +14,7 @@ import Context from '../../ContextAPI/Context';
 import LeftSideBar from '../LeftSideBar/LeftSideBar'
 import InfoBar from '../InfoBar/InfoBar'
 import NavBar from '../NavBar/NavBar';
+import { color } from '@mui/system';
 
 const StepOne = () => {
 
@@ -165,7 +166,7 @@ const StepOne = () => {
 
                   </div>
                 </div>
-                <div>{nameErr?'Please enter valid name':''}</div>
+                <div style={{color:'red'}}>{nameErr?'Please enter valid name':''}</div>
 
 
                 <div style={{ marginTop: '30px' }}>
@@ -192,7 +193,7 @@ const StepOne = () => {
 
 
                   </div>
-                  <div>{emailErr?'Please enter valid email':''}</div>
+                  <div style={{color:'red'}}>{emailErr?'Please enter valid email':''}</div>
 
                 </div>
 
