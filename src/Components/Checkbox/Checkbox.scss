@@ -1,0 +1,36 @@
+@import '../colors.scss';
+
+
+
+.checkbox-container{
+    border: 1.5px solid $input-border-grey;
+    width: 135px;
+    height: 150px;
+    position: relative;
+    border-radius: 3px;
+}
+
+.checkbox-container-checked{
+    border: 1.5px solid $left-blue;
+    background-color: $rbtn-fill;
+    
+}
+
+.checkbox{
+    background-color: $white;
+    border: 1px solid $input-border-grey;
+    
+}
+.checkbox :checked{
+    background-color: $left-blue;
+}
+
+.check-txt{
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 600;
+}
